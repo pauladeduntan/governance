@@ -13,3 +13,4 @@ Each decision:
 ## Decisions
 
 - D001 — Project Framing: Research-led, Non-Commercial Artefact
+- D002 — Product Checksum and Non-Negotiable Invariants
