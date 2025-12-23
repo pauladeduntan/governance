@@ -1,0 +1,28 @@
+# Action Gates (Non-negotiable)
+
+These gates exist to prevent thrash, protect emotional safety, and avoid correctness/security rework.
+
+## Gate A — Spec Integrity
+- Blueprint is frozen and linked as authoritative.
+- Invariants + Domain Language are linked and treated as constraints.
+
+## Gate B — Security Contract
+- Membership checks are enforced consistently in:
+  1) RLS policies
+  2) RPC authorization
+  3) Client routing/context
+- No SECURITY DEFINER RPC accepts identifiers without membership verification.
+
+## Gate C — Implementation Readiness
+Before any build step, answer:
+1) What is the user-facing behaviour?
+2) What is the failure mode if it breaks?
+3) What invariant does it protect?
+
+If you can’t answer all three, stop and make a decision entry or open question.
+
+## Gate D — Public Sharing Hygiene
+Anything public must avoid:
+- Sensitive schema keys/secrets
+- Security-relevant bypass details
+- Data collection claims not in the blueprint
