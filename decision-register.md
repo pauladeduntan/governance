@@ -15,4 +15,5 @@ Each decision:
 - D001 — Project Framing: Research-led, Non-Commercial Artefact
 - D002 — Product Checksum and Non-Negotiable Invariants
 - D003 — MVP Boundary and Explicit Exclusions
-- D004–D006 — Governance policies are enforceable constraints (Decision Hygiene + Auth–RLS–RPC Contract + Action Gates) | Committed | YYYY-MM-DD | ./decision-hygiene.md |
+- D004 — Governance policies are enforceable constraints (Decision Hygiene + Auth–RLS–RPC Contract + Action Gates) | Committed | YYYY-MM-DD | ./decision-hygiene.md |
+- D005 + D006 — Data ownership/exit safety and Activity privacy veil are enforceable constraints; all UX and RPCs must comply
