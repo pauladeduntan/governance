@@ -1,3 +1,12 @@
-This repository contains KinCart’s enforceable build governance: how decisions become truth, how we prevent correctness/security drift (auth + RLS + RPC), and the gates we must pass before implementation steps. KinCart’s priority is reducing mental load and preserving emotional safety through shared intent visibility; if a suggestion conflicts with an invariant, the invariant wins.
+# KinCart — governance (research)
 
-This is not a product backlog or delivery tracker. KinCart is currently non-commercial R&D; architectural authority remains with the sole architect, and external participation is limited to peer review / collaborative learning with no milestones, deadlines, or IP transfer.
+This repository documents KinCart’s **research governance**: how decisions become truth, how constraints prevent drift, and how emotionally safe coordination remains protected under failure.
+
+**Start here:** `START_HERE.md`
+
+This is not a product backlog or delivery tracker. KinCart is a non-commercial research artefact; external participation is limited to peer review / collaborative learning with no milestones, deadlines, or IP transfer.
+
+## What’s inside
+- A decision register and decision records (what is committed vs merely suggested)
+- Action gates (what must be true before changes are made)
+- Conceptual consistency principles that prevent silent drift (described without implementation recipes)
