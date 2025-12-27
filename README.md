@@ -10,3 +10,9 @@ This is not a product backlog or delivery tracker. KinCart is a non-commercial r
 - A decision register and decision records (what is committed vs merely suggested)
 - Action gates (what must be true before changes are made)
 - Conceptual consistency principles that prevent silent drift (described without implementation recipes)
+
+## What is intentionally not published
+- Paste-ready implementation mechanics (schema/RLS/RPC specifics, operational scripts, deploy steps)
+- “How to build KinCart” instructions
+
+Implementation details can be shared privately for supervisor review if needed.
