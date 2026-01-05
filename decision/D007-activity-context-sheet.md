@@ -1,7 +1,7 @@
 # D007 — Activity context sheet for Handoff (LOCKED)
 
 Status: Committed
-Date: YYYY-MM-DD
+Date: 2026-01-05
 
 ## Context
 Large households need “For: <name>” as basic handoff clarity. Showing “For: <name>” directly in the Activity feed risks responsibility/ownership signalling and performance-feed dynamics (FM4).
