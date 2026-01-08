@@ -1,4 +1,4 @@
-# D015 — Placeholder rules + anti-policing microcopy consistency
+# D016 — Placeholder rules + anti-policing microcopy consistency
 
 Date: 2026-01-08
 Status: Accepted
