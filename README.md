@@ -2,7 +2,7 @@
 
 This repository documents KinCart’s **research governance**: how decisions become truth, how constraints prevent drift, and how emotionally safe coordination remains protected under failure.
 
-**Start here:** `START_HERE.md`
+**Start here:** [`START_HERE.md`](https://github.com/pauladeduntan/governance/blob/main/START_HERE.md)
 
 KinCart is a **non-commercial research artefact**. This is not a product backlog or delivery tracker. External participation is limited to peer review / collaborative learning with **no milestones, deadlines, output expectations, or IP transfer**.
 
