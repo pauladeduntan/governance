@@ -1,58 +1,58 @@
-# D007 — Activity context sheet for Handoff (LOCKED)
+# D007 - Activity Context Sheet for Handoff (Locked)
 
-Status: Committed
-Date: 2026-01-05
+## Status
+
+Accepted (Locked)
+
+## Date Recorded
+
+2026-01-05
 
 ## Context
-Large households need “For: <name>” as basic handoff clarity. Showing “For: <name>” directly in the Activity feed risks responsibility/ownership signalling and performance-feed dynamics (FM4).
+
+Households need “For: <name>” as basic Handoff Item clarity. Showing “For: <name>” directly in the Activity feed risks responsibility signalling and performance-feed dynamics (FM4).
 
 This decision keeps:
-- Shared Cart high-clarity (handoff context visible where decisions happen)
-- Activity calm (structural log; not a coordination ledger)
+
+- Shared Cart high-clarity (Handoff Item context visible where coordination decisions happen)
+- Activity calm (readable record, not a coordination ledger)
 
 ## Decision
-Activity remains minimal by default.
-For Handoff-related Activity entries, additional context is revealed on demand via a read-only bottom sheet titled “Activity context”.
 
-## User-facing behaviour (LOCKED)
+Activity remains minimal by default. For Handoff-related Activity entries, additional context is revealed on demand via a read-only bottom sheet titled “Activity Context”.
 
-### Activity feed (default)
-- Event line example: `Chioma added “Dentist”`
+## User-Facing Behaviour (Locked)
+
+### Activity Feed (Default)
+
+- Event line example: `Chioma Added “Dentist”`
 - Optional chip: `Handoff` only
 
-The Activity feed must NOT include:
-- `For: <name>` chips
-- Handoff type chips (Pickup/Appointment/Visit/Other)
-- Handoff label text
-- Hearts events or counts
-- “Household name updated”
-- “Household members updated”
+The Activity feed must not include:
 
-### Activity context sheet (read-only)
+- `For: <name>` chips
+- Handoff type chips (`Pickup`, `Appointment`, `Visit`, `Other`)
+- Any additional Handoff descriptor text beyond the `Handoff` chip
+- Hearts events or counts
+- “Household Name Updated”
+- “Household Members Updated”
+
+### Activity Context Sheet (Read-Only)
+
 Trigger: tap a Handoff-related Activity row.
 
 Contents:
-- Title: `Activity context`
+
+- Title: `Activity Context`
 - Item name (primary)
-- Chips: `Handoff`, `For: <name>`, `<type>` (Pickup/Appointment/Visit/Other)
+- Chips: `Handoff`, `For: <name>`, `<type>` (`Pickup`, `Appointment`, `Visit`, `Other`)
 
 Exit safety:
-- If the “For” person is not an active member, show `Former member` (system-owned) instead of their name.
+
+- If the “For” person is not an active Member, show `Former Member` (system-owned) instead of their name.
 
 Constraints:
+
 - Read-only only (no edit actions)
-- No narrative notes field
-
-## Non-goals (LOCKED)
-- No assignment semantics (“assigned to”, “owner”, “responsible”)
-- No reminders, urgency, due dates
-- No hearts in Activity
-
-## Failure modes defended
-- FM4: Activity becomes a performance feed
-- FM3: Identity exposure after exit (mask “Former member”)
-- FM1: Wrong-household context errors (sheet must reflect active Household)
-
-## Invariants protected
-Emotional safety over optimisation; Visibility over reminders; No judgement/scoring;
-System-owned language; Exit safety; Minimum identity exposure.
+- The Activity Context sheet shows only the minimum context needed for interpretation.
+- Longer Item details, if present elsewhere, belong to the Item Details surface,
