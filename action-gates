@@ -1,28 +1,33 @@
-# Action Gates (Non-negotiable)
+# Action Gates (Non-Negotiable)
 
-These gates exist to prevent thrash, protect emotional safety, and avoid correctness/security rework.
+These gates exist to prevent thrash, protect emotional safety, and avoid correctness and security rework.
 
-## Gate A — Spec Integrity
-- Blueprint is frozen and linked as authoritative.
-- Invariants + Domain Language are linked and treated as constraints.
+## Gate A: Spec Integrity
 
-## Gate B — Security Contract
-- Membership checks are enforced consistently in:
-  1) RLS policies
-  2) RPC authorization
-  3) Client routing/context
-- No SECURITY DEFINER RPC accepts identifiers without membership verification.
+- Blueprint is treated as authoritative and linked.
+- Invariants (Locked) and Domain Language (Locked) are treated as constraints, not suggestions.
 
-## Gate C — Implementation Readiness
-Before any build step, answer:
+## Gate B: Access Boundary Integrity
+
+- Household boundary rules must be enforced consistently across the system.
+- No privileged change is accepted unless the system verifies that the current Member is valid for the active Household boundary.
+- No internal shortcut may bypass boundary integrity, exit safety, or system-owned identity defaults.
+
+## Gate C: Change Readiness
+
+Before any change is accepted, answer:
+
 1) What is the user-facing behaviour?
 2) What is the failure mode if it breaks?
 3) What invariant does it protect?
 
-If you can’t answer all three, stop and make a decision entry or open question.
+If you cannot answer all three, stop and create a Decision Record or an Open Question.
 
-## Gate D — Public Sharing Hygiene
+## Gate D: Public Sharing Hygiene
+
 Anything public must avoid:
-- Sensitive schema keys/secrets
-- Security-relevant bypass details
-- Data collection claims not in the blueprint
+
+- Secrets, credentials, or any security-sensitive internals.
+- Security-relevant bypass details or enforcement mechanisms.
+- Data collection or logging claims that are not already documented in the Blueprint.
+- Copy and paste build recipes that enable cloning.
