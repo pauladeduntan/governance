@@ -1,26 +1,29 @@
-# KinCart — governance (research)
+# KinCart - Governance (Research)
 
-This repository documents KinCart’s **research governance**: how decisions become truth, how constraints prevent drift, and how emotionally safe coordination remains protected under failure.
+This repository documents KinCart’s research governance: how decisions become truth, how constraints prevent drift, and how emotionally safe coordination remains protected under breakdown and repair.
 
-**Start here:** [`START_HERE.md`](https://github.com/pauladeduntan/governance/blob/main/START_HERE.md)
+Start here: [START_HERE.md](https://github.com/pauladeduntan/governance/blob/main/START_HERE.md)
 
-KinCart is a **non-commercial research artefact**. This is not a product backlog or delivery tracker. External participation is limited to peer review / collaborative learning with **no milestones, deadlines, output expectations, or IP transfer**.
+KinCart is a non-commercial research artefact. This is not a product backlog or delivery tracker. External participation is limited to peer review and collaborative learning, with no milestones, deadlines, output expectations, or IP transfer.
 
-## What this repo is responsible for
-- Defining **what is committed** vs what is merely suggested (decision register + decision records)
-- Defining **action gates** (what must be true before changes are accepted)
-- Preventing access-control drift: **Auth → RLS → RPC** must remain consistent
-- Keeping public documentation **implementation-light** (principles and failure modes, not recipes)
+## What this Repo is Responsible For
 
-## Where “product truth” lives
-- **Blueprint repo (public):** frozen product definition, domain language, invariants, and public-safe appendices  
-  *(This repo points to it; it does not duplicate it.)*
-- **Implementation repo (private):** code, migrations, and any executable enforcement
+- Defining what is committed versus what is merely suggested (Decision Register and Decision Records).
+- Defining action gates (what must be true before changes are accepted).
+- Preventing access-control drift at the principle level: access boundaries must remain consistent with membership, boundary integrity, and exit safety.
+- Keeping public documentation implementation-light (principles and failure modes, not recipes).
 
-## How to use this repo
-1. Check the decision register to see what is committed.
-2. If you want to change something, add/extend a decision record first.
-3. Only then update blueprint artefacts and link back to the governing decision.
+## Where Artefact Truth Lives
 
-## Public-safe rule
-This repository may describe invariants and failure modes, but should avoid “copy/paste build recipes” that enable cloning.
+- Blueprint Repo (Public): locked product definition, domain language, invariants, and public-safe appendices. This repo points to it and does not duplicate it.
+- Implementation Materials (Not Published Here): prototype implementation and any executable enforcement mechanisms are intentionally excluded from public repositories.
+
+## How To Use this Repo
+
+1) Check the Decision Register to see what is committed.
+2) If you want to change something, add or extend a Decision Record first.
+3) Only then update the Blueprint artefacts and link back to the governing decision.
+
+## Public-Safe Rule
+
+This repository may describe invariants and failure modes, but must avoid copy and paste build recipes that enable cloning.
