@@ -1,67 +1,76 @@
-# D002 — Product Checksum and Non-Negotiable Invariants
+# D002 - Product Checksum and Non-Negotiable Invariants
 
 ## Status
-Accepted (active)
+
+Accepted (Active)
 
 ## Product Checksum
-**“Making every day lighter, together.”**
 
-All product decisions must reduce mental load and preserve emotional safety.
-If a feature, flow, or system increases vigilance, guilt, pressure, or monitoring,
-it violates the checksum and must be rejected or redesigned.
+“Making every day lighter, together.”
+
+All design decisions must reduce mental load and preserve emotional safety. If a feature, flow, or system increases vigilance, guilt, pressure, or monitoring, it violates the checksum and must be rejected or redesigned.
 
 ## Core Intent
-KinCart exists to make **shared intent visible**, not to measure performance,
-enforce fairness, or optimise behaviour.
 
-Visibility is for coordination and reassurance — not control.
+KinCart exists to make shared intent visible, not to measure performance, enforce fairness, or optimise behaviour.
+
+Visibility is for coordination and reassurance, not control.
 
 ## Non-Negotiable Invariants
 
-### 1. Visibility without enforcement
-- The system shows what is intended, in progress, or completed.
-- It does not assign blame, rank contributors, or evaluate effort.
+### 1) Visibility Without Enforcement
+
+- The system makes shared intent visible (intended, in progress, completed).
+- It does not assign blame, rank Members, or evaluate effort.
 - No leaderboards, scores, streaks, quotas, or performance metrics.
 
-### 2. Awareness without judgement
-- Language avoids “fairness”, “accountability”, or “ownership”.
+### 2) Awareness Without Judgement
+
+- Language avoids fairness, accountability, or ownership framing.
 - The system never implies failure, lateness, or neglect.
 - Absence of action is treated as context, not deficiency.
 
-### 3. Completion is lightweight and reversible
-- Completing an item is a soft signal, not a terminal state.
-- Items can be completed by anyone and re-added without friction.
-- No confirmations, warnings, or “are you sure?” friction in MVP.
+### 3) Completion is Lightweight and Reversible
 
-### 4. No surveillance patterns
+- Complete Item is a soft signal, not a terminal state.
+- Items can be completed by any Member and shown again without friction.
+- No confirmation friction that increases anxiety or blame in the current research prototype.
+
+### 4) No Surveillance Patterns
+
 - No read receipts, last-seen indicators, or inactivity tracking.
 - No “who didn’t do this” views or nudging mechanics.
 - Updates are ambient, not interruptive.
 
-### 5. System-owned language
-- The system uses neutral language (“completed”, “added”, “updated”).
-- No language that implies deletion, failure, or neglect.
-- Emotional tone must feel supportive, not managerial.
+### 5) System-Owned Language
 
-### 6. Context before action
-- Household context is always resolved before showing items.
-- Users can belong to multiple households without role conflict.
-- The system never assumes priority across households.
+- The system uses neutral language (Added, Completed, Updated).
+- No language that implies deletion, failure, or neglect.
+- Emotional tone must avoid managerial or policing cues.
+
+### 6) Context Before Action
+
+- The active Household context is always explicit and visible before actions are taken.
+- Members can belong to multiple Households without implied role hierarchy.
+- The system never assumes priority across Households.
 
 ## Explicit Non-Goals
+
 KinCart is not:
+
 - A task manager
 - A productivity tool
 - A compliance or accountability system
 - A family management or behavioural enforcement app
 
-## Implications for Design and Engineering
-- Schema decisions favour append-only logs and soft state.
-- UI avoids checklists that feel evaluative or punitive.
-- Features that optimise “efficiency” at emotional cost are rejected.
-- Any future feature proposal must explicitly state how it preserves the checksum.
+## Implications
 
-## Review / Supersession
+- Design choices must preserve reversibility, boundary integrity, exit safety, and system-owned language.
+- Interface patterns must avoid evaluative checklists and punitive framing.
+- Any proposal must explicitly state how it preserves the checksum and which invariant it protects.
+
+## Review and Supersession
+
 This decision may only be changed by a new entry:
-- D00X — Product Checksum Revision
 
+- D00X - Product Checksum Revision
