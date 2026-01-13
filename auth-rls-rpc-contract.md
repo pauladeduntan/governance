@@ -1,37 +1,44 @@
-# Auth/RLS/RPC Contract (Drift Guardrail)
+# Access Boundary Contract (Drift Guardrail)
 
-## Non-negotiable
-Membership checks, RLS policies, and RPC semantics must never drift.
-If they drift, we create correctness/security rework and erode emotional safety.
+## Non-Negotiable
+
+Access boundary enforcement and privileged action semantics must never drift. If they drift, we create correctness and security rework and erode emotional safety through boundary violations and exit safety failures.
 
 ## Rules
-1) Any SECURITY DEFINER RPC that reads/writes household data MUST:
-   - derive user_id from auth.uid() (never accept user_id from client)
-   - verify membership via household_members (is_active = true)
-   - fail closed (raise exception / return forbidden) on any mismatch
+
+1) Privileged household-scoped actions must always verify the actor from the session, not from client input:
+   - the actor identity is derived from the current session
+   - the system never accepts an actor identifier supplied by the client as an authority value
+   - the system verifies active membership for the target Household boundary
+   - the system fails closed on any mismatch
 
 2) Client-provided identifiers are never trusted by default:
-   - household_id, cart_id, item_id may be passed for routing,
-     but every RPC MUST re-derive the owning household and re-check membership.
+   - Household and object identifiers may be passed for routing
+   - the system must re-derive the owning Household boundary from authoritative relationships
+   - the system must re-check active membership before accepting any read or change
 
-3) Canonicalization is server-owned:
-   - the server computes canonical keys (e.g., lower(trim(text)))
-   - the client never supplies canonical_key as an authority value
+3) Normalization is system-owned:
+   - the system computes normalization used for equivalence and deduplication
+   - the client never supplies normalization values as authoritative inputs
 
-4) RLS stays enabled:
-   - RLS is ON for all tables
-   - “temporary permissive policies” are allowed only in private dev, never in public/shared environments
-   - production policies must match the same membership semantics as RPCs
+4) Boundary enforcement is always enabled in any shared environment:
+   - no permissive access exceptions are allowed in environments where any real participant data exists
+   - any temporary relaxation for private development must never be used in public, shared, or participant-facing contexts
+   - enforcement semantics must match the same membership, boundary integrity, and exit safety rules across the system
 
-## Required Pattern (RPC)
-Every household-scoped RPC must start with:
-- v_user_id := auth.uid()
-- lookup household_id from cart/item if needed
-- membership EXISTS check
-- then the business logic
+## Required Pattern (Household-Scoped Actions)
+
+Every household-scoped privileged action must start by:
+
+- deriving the actor identity from the current session
+- re-deriving the owning Household boundary from authoritative relationships
+- verifying active membership for that boundary
+- then executing the intended behavior
 
 ## Verification Gate
-No schema change is “done” unless verification SQL passes and confirms:
-- RLS enabled on all tables
-- expected policies exist
-- RPCs are present and enforce membership checks
+
+No change is treated as complete unless verification confirms:
+
+- boundary enforcement is enabled in the target environment
+- privileged actions consistently verify active membership and fail closed
+- boundary integrity and exit safety behaviors match the Blueprint constraints
