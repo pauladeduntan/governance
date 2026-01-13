@@ -1,55 +1,60 @@
-# D004 — Data Ownership, Research Use, and Ethical Boundaries
+# D004 - Data Boundaries, Research Use, and Ethical Posture
 
 ## Status
-Accepted — Non-negotiable
+
+Accepted (Active, Non-Negotiable)
 
 ## Context
-KinCart is being developed as a non-commercial research artefact exploring household coordination, mental load, and emotional safety. The project may later inform academic research (including a potential PhD) and future product development, but is not currently a commercial venture.
 
-Given:
-- UK Skilled Worker visa constraints
-- A long-term Global Talent (Exceptional Promise) goal
-- The possibility of academic research outputs
-- The involvement of collaborators strictly as peer reviewers
-
-It is critical to explicitly define data ownership, usage boundaries, and ethical posture to prevent ambiguity or future misrepresentation.
+KinCart is a non-commercial research artefact exploring household coordination, mental load, and emotional safety. This decision defines data boundaries, research use constraints, and collaboration posture to prevent ambiguity, misrepresentation, and safety drift.
 
 ## Decision
 
-1. **Data Ownership**
-   - All intellectual property, system design, schemas, data models, and generated artefacts are solely owned by the KinCart founder.
-   - Any data generated within KinCart during R&D is controlled by the founder as part of the research artefact.
-   - No collaborator, reviewer, or external contributor acquires ownership, licensing rights, or derivative claims.
+### 1) Intellectual Property and Artefact Ownership
 
-2. **Nature of Data Collected**
-   - KinCart intentionally avoids collecting sensitive personal data.
-   - No financial transaction data, precise location data, health data, or legally sensitive identifiers are collected.
-   - Data is limited to coordination artefacts (e.g. items, actions, timestamps, anonymised behavioural signals).
+- The KinCart founder retains ownership of the artefact’s design work, written materials, and implementation created by the founder.
+- Public repositories contain research governance and public-safe artefacts, not implementation recipes.
+- Collaborators do not acquire ownership, licensing rights, or derivative claims through peer review or collaborative learning contributions.
 
-3. **Research Use**
-   - KinCart may be referenced publicly and academically as a **research artefact**, not a startup.
-   - Aggregated, anonymised insights may be used for academic writing, presentations, or a future PhD application.
-   - No user-identifiable data will be published or used in research outputs.
-   - Any future academic use will adhere to institutional ethics requirements if applicable.
+### 2) Data Minimisation and Collection Boundaries
 
-4. **Non-Commercial Positioning**
-   - KinCart is currently non-commercial R&D.
-   - No revenue generation, monetisation experiments, or commercial contracts are undertaken at this stage.
-   - Any future transition to a commercial product would require an explicit governance decision.
+- KinCart is designed to minimise collection of sensitive personal data.
+- The artefact must not collect or store financial transaction data, precise location data, health data, or legally sensitive identifiers.
+- The artefact must not depend on surveillance patterns (for example, inactivity tracking, read receipts, or per-person monitoring).
+- Any data captured for research purposes must be the minimum necessary and must be explicitly documented in the Blueprint or a governance decision before collection occurs.
 
-5. **Collaborator Boundary**
-   - Collaborators participate solely as peer reviewers or for collaborative learning.
-   - They do not generate production work, are not subject to deadlines, and are not evaluated on output.
-   - Their contributions do not affect data ownership or research rights.
+### 3) Research Use and Publication Boundaries
 
-## Consequences
+- KinCart may be referenced publicly and academically as a research artefact, not as a commercial product or service.
+- Research outputs must not publish user-identifiable data.
+- Any future study involving participants must follow appropriate ethics and consent processes as required by the host institution or review body.
 
-- Governance is now complete for pre-implementation.
-- Backend and frontend implementation can proceed without IP, ethics, or visa-risk ambiguity.
-- Public communication can safely frame KinCart as research-led.
-- Future academic or commercial decisions must explicitly reference this decision if they diverge.
+### 4) Non-Commercial Boundary
+
+- KinCart remains non-commercial while under this decision.
+- No selling access, monetisation experiments, or commercial contracts.
+- Any reframing toward commercial or service delivery posture requires an explicit superseding decision.
+
+### 5) Collaboration Boundary
+
+- Collaborators participate as peer reviewers or for collaborative learning only.
+- No milestones, deadlines, output expectations, or employment-like evaluation.
+- Collaboration does not change IP ownership or relax data and ethics boundaries.
+
+## Implications
+
+- Public communication defaults to research artefact framing and avoids commercial vocabulary.
+- Any change that expands data capture or study posture requires an explicit decision record that states what is collected, why it is necessary, and how emotional safety and exit safety are protected.
+- If a proposal increases surveillance interpretation risk, it is rejected or redesigned.
 
 ## Related Decisions
-- D001 — Product Definition and Research Framing
-- D002 — Non-Commercial R&D and Sole Architect Constraint
-- D003 — MVP Scope Boundaries and Explicit Exclusions
+
+- D001 - Project Framing: Research-Led, Non-Commercial Artefact
+- D002 - Product Checksum and Non-Negotiable Invariants
+- D003 - Current Research Prototype Boundary and Explicit Exclusions
+
+## Review and Supersession
+
+This decision may only be changed by a new entry:
+
+- D00X - Data Boundaries and Research Use Update (Supersedes D004)
