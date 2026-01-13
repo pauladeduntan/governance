@@ -1,43 +1,66 @@
-# D008 — Hearts are item-scoped, not a feed mechanic
+# D008 - Hearts are Item-Scoped, not a Feed Mechanic
 
-Date: 2026-01-08
-Status: Accepted
-Owner: System (KinCart)
-Related: D006 (activity privacy veil), D007 (activity context sheet)
+## Status
+
+Accepted (Locked)
+
+## Date Recorded
+
+2026-01-08
+
+## Owner
+
+KinCart Founder (Sole Architect)
+
+## Related
+
+D006 (Activity Privacy Veil), D007 (Activity Context Sheet)
 
 ## Decision
-"Hearts" are a lightweight appreciation signal that attaches to an **Item**, not to a person or a feed mechanic.
 
-- Hearts live on the Item.
+“Hearts” are a lightweight appreciation signal that attaches to an Item. Hearts must not attach to a person and must not become a feed mechanic.
+
+- Hearts live on the Item within the Shared Cart surface.
 - Hearts are not displayed as a public score.
-- No leaderboards. No default counts. No "most loved" framing.
-- Hearts can be viewed via a dedicated Hearts view/sheet, not as a performance layer on Activity.
+- No leaderboards, no ranking, no “most loved” framing.
+- No default Heart counts on list rows.
+- Hearts must not appear as Activity events, and must not introduce social-feed dynamics into Activity.
+
+If Hearts are surfaced beyond the Item, they appear only in an intentional, separate view that lists hearted Items without ranking.
 
 ## Rationale
-Gratitude is socially high-risk when it becomes currency. KinCart’s goal is to make shared intent visible without turning coordination into status.
+
+Gratitude is socially high-risk when it becomes currency. KinCart’s goal is to make shared intent visible without turning coordination into status or pressure.
 
 ## Invariants Protected
-- Emotional safety > optimisation
-- Visibility > reminders
-- Activity is not a performance feed
+
+- Emotional Safety Over Optimisation
+- Visibility Over Reminders
+- Activity Is Not A Performance Feed
 
 ## Trade-offs
-- Less immediate “engagement feedback” on the main list
-- More intentionality (one extra tap to view Hearts context)
-- Reduced risk of gratitude turning into pressure or comparison
 
-## Alternatives considered (rejected)
-1) Hearts attributed to people (e.g., "Sam received 5 hearts")  
+- Less immediate feedback on the main list
+- More intentionality (an extra step to view Hearts context)
+- Reduced risk of gratitude turning into comparison or obligation
+
+## Alternatives Considered (Rejected)
+
+1) Hearts attributed to people (for example, “Sam received 5 Hearts”)  
    Rejected: becomes social currency and status.
-2) Hearts as an Activity event (“Priya hearted Milk”)  
-   Rejected: makes Activity a social feed and increases surveillance energy.
-3) Heart counts visible on every row  
+
+2) Hearts as an Activity event (for example, “Priya hearted Milk”)  
+   Rejected: turns Activity into a social feed and increases surveillance interpretation.
+
+3) Heart counts visible on every row by default  
    Rejected: invites scorekeeping and comparison.
 
-## UX Contract
-- User action: heart/unheart an Item.
-- UI: show a simple “hearted” state (binary).
-- Optional: a Hearts sheet showing Items that have at least one heart, without ranking.
+## UX Contract (Constraint-Level)
+
+- Action: a Member can heart or unheart an Item.
+- Representation: a simple hearted state is allowed, but counts must not be shown by default on list rows.
+- If a Hearts view exists, it lists hearted Items without ranking.
 
 ## Notes
-"Coral" is a styling attribute, not domain language. The label is "Hearts".
+
+“Coral” is a styling attribute, not domain language. The label is “Hearts”.
