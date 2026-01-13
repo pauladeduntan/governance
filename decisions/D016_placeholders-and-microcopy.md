@@ -1,34 +1,53 @@
-# D016 — Placeholder rules + anti-policing microcopy consistency
+# D016 - Placeholder Rules and Anti-policing Microcopy Consistency
 
-Date: 2026-01-08
-Status: Accepted
-Owner: System (KinCart)
+## Status
+
+Accepted (Locked)
+
+## Date Recorded
+
+2026-01-08
+
+## Owner
+
+KinCart Founder (Sole Architect)
 
 ## Decision
-Placeholders and microcopy must be consistent and must not encourage policing.
 
-### Item name placeholder rules
-- Normal Items:
-  - Placeholder examples are simple groceries/household items (e.g., "e.g., Milk" / "e.g., Rice")
+Placeholders and microcopy must be consistent and must not encourage policing, surveillance, or compliance framing.
+
+### Item Name Placeholder Rules
+
+- Items:
+  - Placeholder examples are simple groceries and household Items (for example, “e.g. Milk” or “e.g. Rice”).
+
 - Handoff Items:
-  - Placeholder examples may include non-grocery coordination nouns only when Handoff is enabled (e.g., "e.g., Dentist" / "e.g., Pharmacy")
+  - Placeholder examples may include non-grocery coordination nouns only when `Handoff` is enabled (for example, “e.g. Appointment” or “e.g. School pickup”).
 
-### Details placeholder rules
-If Details exists:
-- Placeholder is descriptive but brief (e.g., "e.g., 1kg bag" / "e.g., small bottle")
-- Microcopy: "Optional. Keep it brief."
+### Item Details Placeholder Rules
 
-### Handoff detail style guide
-- Prefer: "After school · main entrance"
-- Avoid: exact times and compliance language by default
+If an Item details field exists on an Item surface:
+
+- Placeholder is descriptive but brief (for example, “e.g. 1kg bag” or “e.g. small bottle”).
+- Microcopy prompt: “Optional. Keep It Brief.”
+
+### Handoff Detail Style Guide
+
+- Prefer situational summaries (for example, “After school, main entrance”).
+- Avoid exact timestamps and compliance language by default.
+- Do not write instructions that read like auditing or enforcement.
 
 ## Rationale
-Users copy what the UI suggests. Placeholders are behavioural design; they must support coordination without turning into audit text.
+
+Members copy what the interface suggests. Placeholders are behavioural design. They must support coordination without becoming audit text.
 
 ## Invariants Protected
-- Emotional safety > optimisation
+
+- Emotional Safety Over Optimisation
 - Reduce mental load
+- Visibility Over Reminders
 
 ## Trade-offs
-- Less precision
+
+- Less precision by design
 - Lower conflict risk and better tone integrity
