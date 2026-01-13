@@ -1,91 +1,113 @@
-# D003 — MVP Boundary and Explicit Exclusions
+# D003 - Current Research Prototype Boundary and Explicit Exclusions
 
 ## Status
-Accepted (active)
+
+Accepted (Active)
 
 ## Purpose
-This decision defines the **explicit boundary of the KinCart MVP**.
-Anything not listed as “in scope” is intentionally excluded, even if it appears
-technically simple or commonly expected.
+
+This decision defines the explicit boundary of the current KinCart research prototype. Anything not listed as in scope is intentionally excluded, even if it appears technically simple or commonly expected.
 
 This protects focus, emotional safety, and research integrity.
 
-## MVP Scope (Inclusions)
+## Current Research Prototype Scope (Inclusions)
 
-The MVP includes only:
+The current research prototype includes only:
 
-### 1. Household context resolution
-- Users can belong to one or more households.
-- A household must be selected before viewing carts or items.
+### 1) Household Context Resolution
+
+- Members can belong to one or more Households.
+- A Household is selected explicitly before viewing Shared Cart or Activity.
 - No hierarchy, roles, or permissions beyond active membership.
 
-### 2. Shared carts
-- A household has one or more carts.
-- Carts contain items representing shared intent.
-- Carts are simple containers, not projects or plans.
+### 2) Shared Cart (Single Default Cart)
 
-### 3. Items as soft state
-- Items can be added by any household member.
-- Items can be completed by any household member.
-- Completion hides items without deleting them.
-- Completed items can be re-added without friction.
+- A Household has a single Shared Cart (Default Cart).
+- The Shared Cart contains Items representing shared intent.
+- The Shared Cart is a coordination surface, not a project plan.
 
-### 4. Ambient activity visibility
-- The system records neutral activity events (added, completed).
-- Activity is append-only and non-evaluative.
-- No reactions, comments, or acknowledgements in MVP.
+### 3) Items as Soft State
 
-### 5. Guest and authenticated access
-- Users may explore as guests.
-- Authentication enables persistence, not privilege.
+- Items can be added by any Member.
+- Items can be completed by any Member.
+- Complete Item hides Items without deleting them.
+- Items can be shown again without friction (reversible).
 
-## Explicit Exclusions (Non-Negotiable for MVP)
+### 4) Ambient Activity Visibility
 
-The MVP will NOT include:
+- The system records a neutral Activity record of list actions (Added, Completed, Hid, Showed Again).
+- Activity is calm, read-only, and non-evaluative.
+- Activity is not a performance feed and must not become a notification centre.
 
-### A. Assignment and ownership
-- No item assignment to individuals.
+### 5) Guest and Optional Sign-in
+
+- Members may explore as guests.
+- Sign-in is optional and framed as Save Progress.
+- Sign-in enables persistence, not privilege.
+
+### 6) Hearts (Constrained Gratitude)
+
+- Hearts, if present, are item-scoped and must not function as a feed mechanic.
+- Hearts must not appear as counts or reactions in Activity.
+
+## Explicit Exclusions (Non-Negotiable For The Current Research Prototype)
+
+The current research prototype will not include:
+
+### A) Assignment and Ownership
+
+- No Item assignment to individuals.
 - No “who is responsible” designation.
 - No acceptance, claiming, or delegation flows.
 
-### B. Reminders and nudging
+### B) Reminders and Nudging
+
 - No notifications, reminders, or follow-ups.
 - No “you haven’t done this” or “don’t forget” mechanics.
 
-### C. Fairness or contribution metrics
+### C) Fairness or Contribution Metrics
+
 - No tracking of who did more or less.
 - No statistics, charts, or summaries of contribution.
 - No gamification or streaks.
 
-### D. Social feedback
-- No reactions (likes, hearts).
-- No comments or discussion threads.
-- No praise or acknowledgement mechanics.
+### D) Social Feedback in Activity or Feed Form
 
-### E. Event orchestration
+- No reactions in Activity.
+- No reaction counts in Activity.
+- No comments or discussion threads in Activity.
+
+### E) Event Orchestration
+
 - No timelines, deadlines, or schedules.
-- No event-specific flows in MVP.
-- Event examples may exist only as illustrative concepts.
+- No event-specific cart surfaces.
+- Event examples may exist only as illustrative concepts for research discussion.
 
-### F. Administrative controls
+### F) Administrative Controls
+
 - No admin dashboards.
 - No moderation, approvals, or controls.
 - No audit or compliance views.
 
 ## Rationale
-Each excluded feature introduces:
+
+Each excluded category introduces one or more of the following costs:
+
 - Surveillance risk
 - Emotional pressure
 - Implicit judgement
 - Increased mental load
 
-These costs outweigh short-term usability gains in MVP.
+These costs outweigh short-term completeness gains for the current research prototype.
 
 ## Implications
-- Feature requests that fall outside this boundary are deferred.
-- “Easy to add later” is not a justification for inclusion.
-- MVP success is measured by **clarity and calm**, not completeness.
 
-## Review / Supersession
+- Requests outside this boundary are deferred.
+- “Easy to add later” is not a justification for inclusion.
+- Success is assessed by clarity and calm, not completeness.
+
+## Review and Supersession
+
 This decision may only be changed by a new entry:
-- D00X — MVP Boundary Revision
+
+- D00X - Current Research Prototype Boundary Revision
