@@ -19,6 +19,7 @@ The current research prototype includes only:
 - Members can belong to one or more Households.
 - A Household is selected explicitly before viewing Shared Cart or Activity.
 - No hierarchy, roles, or permissions beyond active membership.
+- System-owned membership transitions exist as safety semantics (Leave Household, Remove Member), even where the prototype UI does not foreground administrative control.
 
 ### 2) Shared Cart (Single Default Cart)
 
@@ -33,19 +34,27 @@ The current research prototype includes only:
 - Complete Item hides Items without deleting them.
 - Items can be shown again without friction (reversible).
 
-### 4) Ambient Activity Visibility
+### 4) Handoff Item (High-Stakes Probe Surface)
 
-- The system records a neutral Activity record of list actions (Added, Completed, Hid, Showed Again).
+- Handoff Item is an optional High-Stakes coordination stress surface used to amplify breakdown and repair dynamics without introducing enforcement.
+- Handoff context is minimal in the Activity feed (event line plus optional Handoff chip).
+- Additional Handoff context (For, Type, optional details) is revealed on demand in a read-only Activity context view.
+
+### 5) Ambient Activity Visibility
+
+- The system records a neutral Activity record of Shared Cart actions (for example, Added, Completed, Hid, Showed Again) and system-owned Household boundary events (for example, Household Name Updated, Household Members Updated) with details kept in read-only context views.
 - Activity is calm, read-only, and non-evaluative.
 - Activity is not a performance feed and must not become a notification centre.
+- Attribution names may be shown for active Members as attribution only, without amplification (no per-person views, counts, sorting, grouping, filtering, badges, streaks, or export-like summaries).
+- After membership ends, identity must dynamically re-render to “Former Member” by default across historical entries and context views.
 
-### 5) Guest and Optional Sign-in
+### 6) Guest and Optional Sign-in
 
 - Members may explore as guests.
 - Sign-in is optional and framed as Save Progress.
 - Sign-in enables persistence, not privilege.
 
-### 6) Hearts (Constrained Gratitude)
+### 7) Hearts (Constrained Gratitude)
 
 - Hearts, if present, are item-scoped and must not function as a feed mechanic.
 - Hearts must not appear as counts or reactions in Activity.
