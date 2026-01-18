@@ -4,7 +4,8 @@ These gates exist to prevent thrash, protect emotional safety, and avoid correct
 
 ## Gate A: Spec Integrity
 
-- Blueprint is treated as authoritative and linked.
+- Blueprint is treated as authoritative.
+- Changes to Blueprint must reference the governing Decision Record when they become committed truth.
 - Invariants (Locked) and Domain Language (Locked) are treated as constraints, not suggestions.
 
 ## Gate B: Access Boundary Integrity
@@ -23,11 +24,19 @@ Before any change is accepted, answer:
 
 If you cannot answer all three, stop and create a Decision Record or an Open Question.
 
-## Gate D: Public Sharing Hygiene
+## Gate D: Activity Safety and Anti-Amplification
+
+- Activity must remain a calm, read-only record, not a performance feed or notification centre.
+- No per-person views, counts, sorting, grouping, filtering, badges, streaks, or export-like summaries are permitted.
+- If attribution names are shown for active Members, identity must dynamically redact to “Former Member” after membership ends across historical entries and context sheets.
+- Context views may add optional details to reduce ambiguity, but details are read-only and must not increase policing, urgency, or auditability.
+
+## Gate E: Public Sharing Hygiene
 
 Anything public must avoid:
 
 - Secrets, credentials, or any security-sensitive internals.
 - Security-relevant bypass details or enforcement mechanisms.
 - Data collection or logging claims that are not already documented in the Blueprint.
-- Copy and paste build recipes that enable cloning.
+- Copy-and-paste build recipes that enable cloning (schema, RLS, RPC, deploy steps, operational scripts).
+- Roadmap or delivery language (MVP, post-MVP, rollout, scaling).
