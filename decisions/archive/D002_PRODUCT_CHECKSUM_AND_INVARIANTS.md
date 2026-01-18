@@ -30,7 +30,7 @@ Visibility is for coordination and reassurance, not control.
 - The system never implies failure, lateness, or neglect.
 - Absence of action is treated as context, not deficiency.
 
-### 3) Completion Is Lightweight And Reversible
+### 3) Completion is Lightweight And Reversible
 
 - Complete Item is a reversible visibility action, not a terminal state.
 - Items can be completed by any Member and shown again without confrontation.
@@ -42,7 +42,7 @@ Visibility is for coordination and reassurance, not control.
 - No “who didn’t do this” views or nudging mechanics.
 - Updates are ambient, not interruptive.
 
-### 5) System-Owned Language
+### 5) System-owned Language
 
 - The system uses neutral language (for example, Added, Completed, Updated).
 - No language that implies deletion, failure, or neglect.
@@ -60,6 +60,7 @@ Visibility is for coordination and reassurance, not control.
 - If attribution names are shown for active Members, they are for attribution only and must not be amplified.
 - No per-person views, counts, sorting, grouping, filtering, badges, streaks, or export-like summaries.
 - After membership ends, identity must dynamically re-render to “Former Member” by default across historical entries and context views.
+- System-owned Household boundary events may be visible (for example, Household Name Updated, Household Members Updated), with details kept in read-only context views.
 
 ## Explicit Non-Goals
 
