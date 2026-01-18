@@ -8,7 +8,7 @@ Accepted (Active)
 
 “Making every day lighter, together.”
 
-All design decisions must reduce mental load and preserve emotional safety. If a feature, flow, or system increases vigilance, guilt, pressure, or monitoring, it violates the checksum and must be rejected or redesigned.
+All design decisions must reduce mental load and preserve emotional safety. If a feature, flow, or system increases vigilance, guilt, pressure, or monitoring interpretation, it violates the checksum and must be rejected or redesigned.
 
 ## Core Intent
 
@@ -20,7 +20,7 @@ Visibility is for coordination and reassurance, not control.
 
 ### 1) Visibility Without Enforcement
 
-- The system makes shared intent visible (intended, in progress, completed).
+- The system makes shared intent visible through calm list visibility (active Items and Items hidden from the active list via Complete Item or Hide Item).
 - It does not assign blame, rank Members, or evaluate effort.
 - No leaderboards, scores, streaks, quotas, or performance metrics.
 
@@ -30,11 +30,11 @@ Visibility is for coordination and reassurance, not control.
 - The system never implies failure, lateness, or neglect.
 - Absence of action is treated as context, not deficiency.
 
-### 3) Completion is Lightweight and Reversible
+### 3) Completion Is Lightweight And Reversible
 
-- Complete Item is a soft signal, not a terminal state.
-- Items can be completed by any Member and shown again without friction.
-- No confirmation friction that increases anxiety or blame in the current research prototype.
+- Complete Item is a reversible visibility action, not a terminal state.
+- Items can be completed by any Member and shown again without confrontation.
+- Avoid confirmation patterns that increase blame, anxiety, or policing interpretation. Prefer reversible actions and clear context.
 
 ### 4) No Surveillance Patterns
 
@@ -44,7 +44,7 @@ Visibility is for coordination and reassurance, not control.
 
 ### 5) System-Owned Language
 
-- The system uses neutral language (Added, Completed, Updated).
+- The system uses neutral language (for example, Added, Completed, Updated).
 - No language that implies deletion, failure, or neglect.
 - Emotional tone must avoid managerial or policing cues.
 
@@ -54,14 +54,21 @@ Visibility is for coordination and reassurance, not control.
 - Members can belong to multiple Households without implied role hierarchy.
 - The system never assumes priority across Households.
 
+### 7) Activity Safety (Read-Only, Non-Amplifying)
+
+- Activity is a calm, read-only record, not a performance feed or notification centre.
+- If attribution names are shown for active Members, they are for attribution only and must not be amplified.
+- No per-person views, counts, sorting, grouping, filtering, badges, streaks, or export-like summaries.
+- After membership ends, identity must dynamically re-render to “Former Member” by default across historical entries and context views.
+
 ## Explicit Non-Goals
 
 KinCart is not:
 
-- A task manager
-- A productivity tool
-- A compliance or accountability system
-- A family management or behavioural enforcement app
+- A task manager.
+- A productivity tool.
+- A compliance or accountability system.
+- A family management or behavioural enforcement app.
 
 ## Implications
 
