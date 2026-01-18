@@ -8,7 +8,16 @@ This repository defines how KinCart research decisions become binding truth and 
 2) Decision Records (Why It Was Committed): ./decisions/  
 3) Action Gates (What Must Be True Before Changes): ./action-gates/
 
-## Related Blueprint (What Is Being Governed)
+## Decision Storage
+
+Decision Records are filed in two places for repository hygiene:
+
+- `./decisions/` (recent decisions)
+- `./archived/` (older decisions)
+
+Archive location does not change binding status. A decision stops being binding only when a later Decision Record explicitly supersedes it.
+
+## Related Blueprint (What is Being Governed)
 
 Blueprint Repository: https://github.com/pauladeduntan/blueprint
 
