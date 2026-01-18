@@ -1,4 +1,4 @@
-# D001 - Project Framing: Research-Led, Non-Commercial Artefact
+# D001 - Project Framing: Research-led, Non-Commercial Artefact
 
 ## Status
 
@@ -6,13 +6,14 @@ Accepted (Active)
 
 ## Decision
 
-KinCart is framed publicly and in research practice as a research-led, non-commercial artefact exploring Household coordination systems focused on mental load reduction, emotional safety, and shared intent.
+KinCart is framed publicly and in research practice as a research-led, non-commercial artefact in HCI/CSCW exploring Household coordination systems focused on mental load reduction, emotional safety, and shared intent.
 
 Until an explicit later decision changes this framing:
 
 - No trading, revenue, paid pilots, or commercial go-to-market activity.
 - Public language avoids startup positioning and commercial vocabulary such as growth, customers, pricing, sales, traction, or product launch framing.
 - Public outputs are research materials and public-safe governance artefacts (principles, constraints, failure modes, and behaviour-level narratives), not implementation recipes.
+- Public artefacts must avoid roadmap and delivery language (for example, MVP, post-MVP, rollout, scaling).
 
 ## Rationale
 
