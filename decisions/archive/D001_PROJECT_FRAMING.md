@@ -6,13 +6,13 @@ Accepted (Active)
 
 ## Decision
 
-KinCart is framed publicly and in research practice as a research-led, non-commercial artefact exploring household coordination systems focused on mental load reduction, emotional safety, and shared intent.
+KinCart is framed publicly and in research practice as a research-led, non-commercial artefact exploring Household coordination systems focused on mental load reduction, emotional safety, and shared intent.
 
 Until an explicit later decision changes this framing:
 
 - No trading, revenue, paid pilots, or commercial go-to-market activity.
 - Public language avoids startup positioning and commercial vocabulary such as growth, customers, pricing, sales, traction, or product launch framing.
-- Public outputs are research materials and public-safe governance artefacts (principles, constraints, failure modes, and behavior-level narratives), not implementation recipes.
+- Public outputs are research materials and public-safe governance artefacts (principles, constraints, failure modes, and behaviour-level narratives), not implementation recipes.
 
 ## Rationale
 
@@ -30,12 +30,14 @@ This framing:
 - Publishing design rationales, invariants, constraints, and public-safe governance decisions.
 - Sharing non-sensitive prototypes and research materials suitable for interpretive study.
 - Building and testing the current research prototype privately.
-- Collecting informal qualitative feedback without commercial intent and without coercive framing.
+- Collecting informal qualitative feedback as design input, without presenting it as study data or findings.
+
+Any participant-facing study use requires appropriate ethics and consent processes as required by the host institution.
 
 ### Not Allowed
 
 - Selling access, taking payments, paid subscriptions, or revenue experiments.
-- Public recruitment that implies employment, deliverables, deadlines, or hiring.
+- Recruiting collaborators in a way that implies employment, deliverables, deadlines, output expectations, or hiring.
 - Claims of market availability, performance guarantees, production readiness, or operational service delivery.
 
 ## Ownership and Collaboration Model
