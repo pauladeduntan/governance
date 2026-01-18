@@ -1,0 +1,57 @@
+# D017 - Activity Anti-amplification Guardrails
+
+## Status
+Accepted
+
+## Date
+2026-01-18
+
+## Decision
+
+Activity must remain a calm, read-only record of Shared Cart and selected system-owned Household events. It must not support any mechanics that enable per-person comparison, ranking, or “performance feed” interpretation.
+
+The following are explicitly disallowed:
+
+- Per-person views (for example, “Paul’s Activity”).
+- Counts or totals by person (including hearts, completions, additions, or any other action count).
+- Sorting, grouping, filtering, or searching by person.
+- Badges, streaks, leaderboards, or contribution summaries.
+- Export-like summaries or shareable “who did what” rollups.
+
+Names may appear for active Members as attribution only, but attribution must not be amplified into metrics or per-person representations.
+
+## Rationale
+
+The primary drift risk in household coordination systems is that a visibility surface becomes an accountability surface. Even without explicit scoring, small affordances (filters, counts, sorting) can turn Activity into monitoring and comparison.
+
+This decision blocks surveillance interpretation and reduces conflict-evidence creation, especially during High-Stakes Handoff Item moments where blame risk is elevated.
+
+## Failure Modes Prevented
+
+- Activity becomes a performance feed even without explicit scoring.
+- Household conflict escalates through “evidence” derived from per-person views or totals.
+- Participants interpret the system as judging or measuring contributions.
+- High-Stakes Handoff Items trigger compliance policing via rollups.
+
+## Invariants Protected
+
+- Emotional Safety Over Optimisation.
+- Visibility Over Reminders.
+- Shared intent visible; no contribution scoring, fairness evaluation, or per-person judgement.
+- System-owned language and identity display.
+
+## Scope
+
+Applies to:
+
+- Activity feed.
+- Any Activity-adjacent views (including context sheets).
+- Any UI, export, or reporting affordance that could present per-person representations.
+
+## Verification
+
+To consider this decision implemented, verify that:
+
+- No per-person filters, grouping, sorting, or counts exist in Activity or any related view.
+- No badges, streaks, leaderboards, or contribution summaries are present.
+- Any attribution names shown for active Members do not enable per-person representations elsewhere.
