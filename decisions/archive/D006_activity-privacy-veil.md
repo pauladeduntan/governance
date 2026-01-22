@@ -14,7 +14,7 @@ KinCart Founder (Sole Architect)
 
 ## Context
 
-Activity feeds in household coordination tools commonly drift into:
+Activity feeds in Household coordination tools commonly drift into:
 
 - Surveillance (“who did what”)
 - Scorekeeping (“who contributes”)
@@ -24,19 +24,19 @@ KinCart needs Activity for visibility of shared intent while constraining drift 
 
 ## Decision
 
-### 1) Activity Is A Readable Record Of Shared Intent, not a Performance Feed
+### 1) Activity is a Readable Record of Shared Intent, Not a Performance Feed
 
 - No streaks, top contributors, badges, leaderboards, or contribution summaries.
 
-### 2) Default Attribution is Low-Pressure and System-owned
+### 2) Default Attribution is Low-pressure and System-owned
 
 - Routine Item events may display a Member name where it does not create attribution pressure.
-- High-risk boundary events (membership ending, removal) are system-owned and non-attributed by default.
+- System-owned Household boundary events may appear as feed lines without individual attribution by default (for example, Household Name Updated, Household Members Updated, A Former Member No Longer Has Access).
 - After exit, references default to “Former Member” (system-owned) rather than preserving a name history by default.
 
 ### 3) Event Copy Avoids Moral Framing
 
-- Use neutral verbs: Added, Completed, Hid, Showed Again, Membership Ended, Member Joined.
+- Use neutral verbs: Added, Completed, Hid, Showed Again, Member Joined.
 - Avoid: failed, missed, late, responsible, should.
 
 ### 4) Detail Sheets Clarify Coordination, not Auditability
@@ -45,7 +45,7 @@ KinCart needs Activity for visibility of shared intent while constraining drift 
 - Detail views do not reveal “who removed whom” by default.
 - Detail views must not create an evidence trail that increases policing or surveillance interpretations.
 
-### 5) High-Stakes Handoff Items Are Treated As Pressure Surfaces
+### 5) High-Stakes Handoff Items are Treated as Pressure Surfaces
 
 - Activity feed entries involving a Handoff Item remain minimal and may include a single “Handoff” chip only.
 - High-Stakes context details (for example, “For: <name>” and type) are shown only in a read-only context view, not in the feed by default.
@@ -69,6 +69,12 @@ KinCart needs Activity for visibility of shared intent while constraining drift 
 ## Acceptance Criteria
 
 - No UI computes or displays contribution metrics.
-- Membership boundary events use system-owned copy and avoid naming an actor by default.
+- Household boundary events use system-owned copy and avoid naming an actor by default.
 - Detail views remain informational and support recovery without becoming accusatory.
 - Activity handling of Handoff Items remains minimal in the feed and does not enable policing interpretations.
+
+## Review and Supersession
+
+This decision can only be changed via a new decision entry:
+
+- D00X - Activity Privacy Veil Update (Supersedes D006)
