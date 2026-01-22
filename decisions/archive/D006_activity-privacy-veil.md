@@ -1,4 +1,4 @@
-# D006 - Activity Privacy Veil (Readable Record, Not Surveillance Feed)
+# D006 - Activity Privacy Veil (Readable Record, not Surveillance Feed)
 
 ## Status
 
@@ -20,15 +20,15 @@ Activity feeds in household coordination tools commonly drift into:
 - Scorekeeping (“who contributes”)
 - Conflict evidence (“proof”)
 
-KinCart needs Activity for visibility of shared intent while preventing escalation dynamics.
+KinCart needs Activity for visibility of shared intent while constraining drift pathways that amplify pressure, blame risk, or surveillance interpretation (visibility-to-enforcement drift).
 
 ## Decision
 
-### 1) Activity Is A Readable Record Of Shared Intent, Not A Performance Feed
+### 1) Activity Is A Readable Record Of Shared Intent, not a Performance Feed
 
 - No streaks, top contributors, badges, leaderboards, or contribution summaries.
 
-### 2) Default Attribution Is Low-Pressure And System-Owned
+### 2) Default Attribution is Low-Pressure and System-owned
 
 - Routine Item events may display a Member name where it does not create attribution pressure.
 - High-risk boundary events (membership ending, removal) are system-owned and non-attributed by default.
@@ -39,7 +39,7 @@ KinCart needs Activity for visibility of shared intent while preventing escalati
 - Use neutral verbs: Added, Completed, Hid, Showed Again, Membership Ended, Member Joined.
 - Avoid: failed, missed, late, responsible, should.
 
-### 4) Detail Sheets Clarify Coordination, Not Auditability
+### 4) Detail Sheets Clarify Coordination, not Auditability
 
 - Detail views show the minimum needed to understand intent and recover from mistakes.
 - Detail views do not reveal “who removed whom” by default.
@@ -57,8 +57,8 @@ KinCart needs Activity for visibility of shared intent while preventing escalati
 
 ## Rationale
 
-- Activity should reduce ambiguity without creating pressure.
-- Lower evidence value reduces conflict risk.
+- Activity should bound ambiguity without creating pressure.
+- Lower evidence value can limit conflict evidence creation under breakdown.
 - Supports invariants: Visibility Over Reminders and Emotional Safety Over Optimisation.
 
 ## Implications
