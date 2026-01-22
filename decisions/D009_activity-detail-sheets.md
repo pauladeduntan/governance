@@ -26,7 +26,7 @@ Activity rows may open an optional read-only detail sheet that provides minimal,
 
 ## Rationale
 
-Activity must stay readable and safe. When more context is needed, it should be provided without escalating household dynamics.
+Activity must stay readable and safe. When more context is needed, it should be provided without escalating Household dynamics. This decision constrains **visibility-to-enforcement drift** by keeping additional context bounded, read-only, and non-narrative.
 
 ## Invariants Protected
 
@@ -34,7 +34,7 @@ Activity must stay readable and safe. When more context is needed, it should be 
 - Exit Safety
 - Activity Is Not A Performance Feed
 
-## Trade-Offs
+## Trade-offs
 
 - Less accountability detail
 - More safety in conflict-prone situations
@@ -60,3 +60,9 @@ If any of the excluded sheet types are ever introduced, they require an explicit
 - No “who did this to whom” framing.
 - Prefer boundary language: access, membership, visibility.
 - No moral language, no blame cues, no enforcement framing.
+
+## Review and Supersession
+
+This decision can only be changed via a new decision entry:
+
+- D00X - Activity Detail Sheets Update (Supersedes D009)
