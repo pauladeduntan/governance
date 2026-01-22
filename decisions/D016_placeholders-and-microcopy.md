@@ -14,12 +14,12 @@ KinCart Founder (Sole Architect)
 
 ## Decision
 
-Placeholders and microcopy must be consistent and must not encourage policing, surveillance, or compliance framing.
+Placeholders and microcopy are treated as interaction contracts. They must be consistent and must not encourage policing, surveillance, or compliance framing.
 
 ### Item Name Placeholder Rules
 
 - Items:
-  - Placeholder examples are simple groceries and household Items (for example, “e.g. Milk” or “e.g. Rice”).
+  - Placeholder examples are simple groceries and Household Items (for example, “e.g. Milk” or “e.g. Rice”).
 
 - Handoff Items:
   - Placeholder examples may include non-grocery coordination nouns only when `Handoff` is enabled (for example, “e.g. Appointment” or “e.g. School pickup”).
@@ -39,15 +39,20 @@ If an Item details field exists on an Item surface:
 
 ## Rationale
 
-Members copy what the interface suggests. Placeholders are behavioural design. They must support coordination without becoming audit text.
+Members copy what the interface suggests. Placeholders and microcopy can become responsibility signalling. This decision constrains **visibility-to-enforcement drift** by preventing default text from training audit-like or managerial coordination norms.
 
 ## Invariants Protected
 
 - Emotional Safety Over Optimisation
-- Reduce mental load
 - Visibility Over Reminders
 
 ## Trade-offs
 
 - Less precision by design
-- Lower conflict risk and better tone integrity
+- Lower conflict risk and stronger tone integrity
+
+## Review and Supersession
+
+This decision can only be changed via a new decision entry:
+
+- D00X - Placeholder And Microcopy Rules Update (Supersedes D016)
