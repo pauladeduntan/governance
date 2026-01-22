@@ -24,13 +24,13 @@ D006 (Activity Privacy Veil), D007 (Activity Context Sheet)
 - Hearts are not displayed as a public score.
 - No leaderboards, no ranking, no “most loved” framing.
 - No default Heart counts on list rows.
-- Hearts must not appear as Activity events, and must not introduce social-feed dynamics into Activity.
+- Hearts must not appear as Activity events and must not introduce social-feed dynamics into Activity.
 
 If Hearts are surfaced beyond the Item, they appear only in an intentional, separate view that lists hearted Items without ranking.
 
 ## Rationale
 
-Gratitude is socially high-risk when it becomes currency. KinCart’s goal is to make shared intent visible without turning coordination into status or pressure.
+Gratitude is socially high-risk when it becomes currency. This constraint set limits status signalling and constrains **visibility-to-enforcement drift** by preventing appreciation from becoming comparison, obligation, or monitoring interpretation.
 
 ## Invariants Protected
 
@@ -50,7 +50,7 @@ Gratitude is socially high-risk when it becomes currency. KinCart’s goal is to
    Rejected: becomes social currency and status.
 
 2) Hearts as an Activity event (for example, “Priya hearted Milk”)  
-   Rejected: turns Activity into a social feed and increases surveillance interpretation.
+   Rejected: turns Activity into a social feed and amplifies surveillance interpretation.
 
 3) Heart counts visible on every row by default  
    Rejected: invites scorekeeping and comparison.
@@ -64,3 +64,9 @@ Gratitude is socially high-risk when it becomes currency. KinCart’s goal is to
 ## Notes
 
 “Coral” is a styling attribute, not domain language. The label is “Hearts”.
+
+## Review and Supersession
+
+This decision can only be changed via a new decision entry:
+
+- D00X - Hearts Constraint Update (Supersedes D008)
