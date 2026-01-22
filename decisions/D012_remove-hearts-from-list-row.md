@@ -14,7 +14,7 @@ KinCart Founder (Sole Architect)
 
 ## Related
 
-D008 (Hearts are Item-scoped, not a Feed Mechanic)
+D008 (Hearts are Item-Scoped, not a Feed Mechanic)
 
 ## Decision
 
@@ -26,7 +26,7 @@ Hearts are not a primary action on every Shared Cart list row by default.
 
 ## Rationale
 
-If Hearts are always visible, the interface trains Members to perform gratitude. That creates pressure, introduces social currency dynamics, and distracts from shared intent visibility.
+If Hearts are always visible, the interface trains performative gratitude. That can be read as obligation and comparison, which constrains emotional safety and can amplify **visibility-to-enforcement drift** by converting appreciation into a pressure cue.
 
 ## Invariants Protected
 
@@ -38,3 +38,9 @@ If Hearts are always visible, the interface trains Members to perform gratitude.
 - An extra step to express appreciation
 - Lower risk of gratitude becoming status
 - Lower visual clutter on the Shared Cart
+
+## Review and Supersession
+
+This decision can only be changed via a new decision entry:
+
+- D00X - Hearts Placement Update (Supersedes D012)
