@@ -37,7 +37,7 @@ The Activity feed must not include:
 - Any additional Handoff descriptor text beyond the `Handoff` chip
 - Hearts events or counts
 
-### Activity Context Sheet (Read-Only)
+### Activity Context Sheet (Read-only)
 
 Trigger: tap a Handoff-related Activity row.
 
@@ -56,3 +56,9 @@ Constraints:
 - Read-only only (no edit actions)
 - The Activity Context sheet shows only the minimum context needed for interpretation.
 - Longer Item details, if present elsewhere, belong to the Item Details surface, not the Activity Context sheet.
+
+## Review and Supersession
+
+This decision can only be changed via a new decision entry:
+
+- D00X - Activity Context Sheet For Handoff Update (Supersedes D007)
