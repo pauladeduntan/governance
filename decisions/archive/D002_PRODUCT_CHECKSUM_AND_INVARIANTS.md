@@ -8,7 +8,7 @@ Accepted (Active)
 
 “Making every day lighter, together.”
 
-All design decisions must reduce mental load and preserve emotional safety. If a feature, flow, or system increases vigilance, guilt, pressure, or monitoring interpretation, it violates the checksum and must be rejected or redesigned.
+All design decisions must treat mental load reduction and emotional safety as aims. If a feature, flow, or system amplifies vigilance, guilt, pressure, or monitoring interpretation, it conflicts with the checksum and must be rejected or redesigned.
 
 ## Core Intent
 
@@ -30,11 +30,11 @@ Visibility is for coordination and reassurance, not control.
 - The system never implies failure, lateness, or neglect.
 - Absence of action is treated as context, not deficiency.
 
-### 3) Completion is Lightweight And Reversible
+### 3) Completion is Lightweight and Reversible
 
 - Complete Item is a reversible visibility action, not a terminal state.
 - Items can be completed by any Member and shown again without confrontation.
-- Avoid confirmation patterns that increase blame, anxiety, or policing interpretation. Prefer reversible actions and clear context.
+- Avoid confirmation patterns that amplify blame, anxiety, or policing interpretation. Prefer reversible actions and clear context.
 
 ### 4) No Surveillance Patterns
 
@@ -54,13 +54,17 @@ Visibility is for coordination and reassurance, not control.
 - Members can belong to multiple Households without implied role hierarchy.
 - The system never assumes priority across Households.
 
-### 7) Activity Safety (Read-Only, Non-Amplifying)
+### 7) Activity Safety (Read-only, Non-amplifying)
 
 - Activity is a calm, read-only record, not a performance feed or notification centre.
 - If attribution names are shown for active Members, they are for attribution only and must not be amplified.
 - No per-person views, counts, sorting, grouping, filtering, badges, streaks, or export-like summaries.
 - After membership ends, identity must dynamically re-render to “Former Member” by default across historical entries and context views.
 - System-owned Household boundary events may be visible (for example, Household Name Updated, Household Members Updated), with details kept in read-only context views.
+
+## Phenomenon Anchor
+
+These invariants constrain **visibility-to-enforcement drift** by treating representation choices (language, visibility, attribution, and reversibility) as interpretation-shaping cues, especially under breakdown and repair.
 
 ## Explicit Non-Goals
 
@@ -81,4 +85,4 @@ KinCart is not:
 
 This decision may only be changed by a new entry:
 
-- D00X - Product Checksum Revision
+- D00X - Product Checksum And Invariants Revision (Supersedes D002)
