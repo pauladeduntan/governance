@@ -12,6 +12,8 @@ Accepted (Locked)
 
 Households need “For: <name>” as basic Handoff Item clarity. Showing “For: <name>” directly in the Activity feed risks responsibility signalling and performance-feed dynamics (FM4).
 
+This decision constrains **visibility-to-enforcement drift** by keeping High-Stakes context available on demand without turning the feed into responsibility signalling.
+
 This decision keeps:
 
 - Shared Cart high-clarity (Handoff Item context visible where coordination decisions happen)
@@ -34,8 +36,6 @@ The Activity feed must not include:
 - Handoff type chips (`Pickup`, `Appointment`, `Visit`, `Other`)
 - Any additional Handoff descriptor text beyond the `Handoff` chip
 - Hearts events or counts
-- “Household Name Updated”
-- “Household Members Updated”
 
 ### Activity Context Sheet (Read-Only)
 
@@ -55,4 +55,4 @@ Constraints:
 
 - Read-only only (no edit actions)
 - The Activity Context sheet shows only the minimum context needed for interpretation.
-- Longer Item details, if present elsewhere, belong to the Item Details surface,
+- Longer Item details, if present elsewhere, belong to the Item Details surface, not the Activity Context sheet.
