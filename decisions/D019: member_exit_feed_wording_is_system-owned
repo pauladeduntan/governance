@@ -1,51 +1,57 @@
 # D019 - Member Exit Feed Wording is System-Owned
 
 ## Status
-Accepted
 
-## Date
+Accepted (Locked)
+
+## Date Recorded
+
 2026-01-18
+
+## Owner
+
+KinCart Founder (Sole Architect)
 
 ## Decision
 
-When membership ends for any reason (leave or removal), the Activity feed must not display an event that implies blame, punishment, or an interpersonal action.
+When membership ends for any reason (leave or removal), the Activity feed does not display an event that implies blame, punishment, or an interpersonal action.
 
-The feed must use the single neutral system-owned phrase:
+The feed uses the single neutral system-owned phrase:
 
 - A Former Member No Longer Has Access
 
 This event is system-owned and non-attributed by default.
 
-Any context needed for comprehension may be shown on demand in a read-only context sheet, but must not reveal persistent identity history after membership ends. If identity is shown in any context view, it must dynamically re-render to “Former Member” by default after membership ends.
+Any context needed for comprehension may be shown on demand in a read-only context sheet, but it must not reveal persistent identity history after membership ends. If identity is shown in any context view, it dynamically re-renders to “Former Member” by default after membership ends.
 
 ## Rationale
 
-Membership transitions are socially sensitive. Explicit “left” versus “removed” wording can be weaponized in conflict and can increase emotional harm. A single neutral system-owned phrase preserves comprehension while reducing punitive interpretation.
+Membership transitions are socially sensitive. “Left” versus “Removed” wording can be weaponized in conflict and can increase emotional harm. A single neutral system-owned phrase preserves comprehension while reducing punitive interpretation.
 
-This also supports exit safety by preventing persistent identity exposure and preventing Activity from becoming a dispute record.
+This decision constrains **visibility-to-enforcement drift** by keeping membership-end visibility low-detail and non-narrative, reducing conflict evidence creation and limiting surveillance interpretation.
 
 ## Failure Modes Prevented
 
 - Feed content becomes conflict evidence (“you removed me”).
-- Users feel surveilled or punished through wording choices.
+- Users read punishment or surveillance into wording choices.
 - Identity exposure persists after membership ends through historical entries.
-- Exit becomes emotionally unsafe due to public attribution.
+- Exit becomes emotionally unsafe due to attribution.
 
 ## Invariants Protected
 
-- Emotional Safety Over Optimisation.
-- Visibility Over Reminders.
-- System-owned language and identity display.
-- Exit safety.
-- Activity is a calm record, not an accountability surface.
+- Emotional Safety Over Optimisation
+- Visibility Over Reminders
+- System-owned language and identity display
+- Exit safety
+- Activity is a calm record, not an accountability surface
 
 ## Scope
 
 Applies to:
 
-- Activity feed wording for membership end.
-- Any Activity context sheet that clarifies membership end.
-- Any identity rendering in historical Activity views.
+- Activity feed wording for membership end
+- Any Activity context sheet that clarifies membership end
+- Any identity rendering in historical Activity views
 
 ## Verification
 
@@ -55,3 +61,9 @@ To consider this decision implemented, verify that:
 - The event is not attributed to any actor in the feed.
 - Context details are read-only and minimal.
 - Identity is dynamically redacted to “Former Member” by default after membership ends across historical entries and context sheets.
+
+## Review and Supersession
+
+This decision can only be changed via a new decision entry:
+
+- D00X - Member Exit Wording Update (Supersedes D019)
