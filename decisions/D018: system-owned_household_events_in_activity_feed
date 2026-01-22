@@ -1,14 +1,20 @@
 # D018 - System-owned Household Events in Activity Feed
 
 ## Status
-Accepted
 
-## Date
+Accepted (Locked)
+
+## Date Recorded
+
 2026-01-18
+
+## Owner
+
+KinCart Founder (Sole Architect)
 
 ## Decision
 
-Activity may include a small set of system-owned Household events to reduce confusion and prevent misinterpretation during coordination breakdowns. These events are included for boundary clarity and comprehension, not for accountability.
+Activity may include a small set of system-owned Household events to reduce confusion and constrain misinterpretation during coordination breakdowns. These events exist for boundary clarity and comprehension, not for accountability.
 
 Included system-owned events in the Activity feed:
 
@@ -22,38 +28,39 @@ Excluded from the Activity feed as explicit event text:
 - Member Removed
 
 Instead, membership loss is represented only as:
+
 - A Former Member No Longer Has Access
 
 Where additional detail is needed to reduce ambiguity, it may be revealed on demand in a read-only context sheet. The feed remains minimal.
 
 ## Rationale
 
-Without system-owned Household events, Members may misread state changes as interpersonal actions (“who changed this?”), increasing pressure and conflict risk. Minimal, neutral system-owned events preserve comprehension and reduce false attribution.
+This decision constrains **visibility-to-enforcement drift** by keeping state-change visibility system-owned and low-detail, reducing false attribution (“who did this?”) without turning Activity into a governance ledger.
 
-Using a single neutral phrase for membership loss avoids ambiguity and avoids the feed becoming a punitive or accusatory surface.
+Using a single neutral phrase for membership loss avoids punitive framing and limits conflict evidence creation.
 
 ## Failure Modes Prevented
 
 - Members misattribute system changes to another person, creating blame.
-- Confusion during Household context switching or renaming causes wrong-household actions.
+- Confusion during Household context switching or renaming contributes to wrong-Household actions.
 - Membership loss is framed as punishment or conflict evidence.
 - Activity becomes a governance ledger rather than a calm record.
 
 ## Invariants Protected
 
-- Emotional Safety Over Optimisation.
-- Visibility Over Reminders.
-- System-owned language and identity display.
-- Boundary integrity and exit safety treated as safety properties.
-- Activity is a record, not a performance feed.
+- Emotional Safety Over Optimisation
+- Visibility Over Reminders
+- System-owned language and identity display
+- Boundary integrity and exit safety treated as safety properties
+- Activity is a record, not a performance feed
 
 ## Scope
 
 Applies to:
 
-- Activity feed event set and wording.
-- Household rename and membership change visibility.
-- Activity context sheets used to reduce ambiguity without adding policing affordances.
+- Activity feed event set and wording
+- Household rename and membership change visibility
+- Activity context sheets used to reduce ambiguity without adding policing affordances
 
 ## Verification
 
@@ -62,3 +69,9 @@ To consider this decision implemented, verify that:
 - The Activity feed includes only the allowed system-owned Household events.
 - Membership loss never appears as “Member Left” or “Member Removed” in the feed.
 - Any additional context is read-only and revealed on demand, without edit or escalation actions.
+
+## Review and Supersession
+
+This decision can only be changed via a new decision entry:
+
+- D00X - System-owned Household Events Update (Supersedes D018)
