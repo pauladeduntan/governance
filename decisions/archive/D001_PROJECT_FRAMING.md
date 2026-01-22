@@ -6,7 +6,9 @@ Accepted (Active)
 
 ## Decision
 
-KinCart is framed publicly and in research practice as a research-led, non-commercial artefact in HCI/CSCW exploring Household coordination systems focused on mental load reduction, emotional safety, and shared intent.
+KinCart is framed publicly and in research practice as a research-led, non-commercial artefact in HCI/CSCW. It uses Households as the primary empirical site to examine **visibility-to-enforcement drift**: how shared-intent coordination cues can be interpreted as obligation, blame, or surveillance under breakdown and repair.
+
+“Making every day lighter, together.” is treated as a checksum and design aim, not a reported outcome.
 
 Until an explicit later decision changes this framing:
 
@@ -19,9 +21,9 @@ Until an explicit later decision changes this framing:
 
 This framing:
 
-- Preserves research integrity by preventing premature commercialization claims while the artefact remains exploratory.
+- Preserves research integrity by constraining premature commercialization claims while the artefact remains exploratory.
 - Reduces misclassification risk by keeping the project legible as a research probe rather than a product or service.
-- Protects participant safety and emotional safety goals by avoiding pressure-driven incentives that encourage enforcement or surveillance drift.
+- Protects participant safety and emotional safety aims by avoiding pressure-driven incentives that can amplify enforcement or surveillance interpretations.
 - Keeps the checksum intact: “Making every day lighter, together.”
 
 ## Boundaries
