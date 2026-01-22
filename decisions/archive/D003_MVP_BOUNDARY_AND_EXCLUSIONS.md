@@ -42,7 +42,7 @@ The current research prototype includes only:
 
 ### 5) Ambient Activity Visibility
 
-- The system records a neutral Activity record of Shared Cart actions (for example, Added, Completed, Hid, Showed Again) and system-owned Household boundary events (for example, Household Name Updated, Household Members Updated) with details kept in read-only context views.
+- The system records a neutral Activity record of Shared Cart actions (for example, Added, Completed, Hid, Showed Again) and system-owned Household boundary events (for example, Household Name Updated, Household Members Updated), with details kept in read-only context views.
 - Activity is calm, read-only, and non-evaluative.
 - Activity is not a performance feed and must not become a notification centre.
 - Attribution names may be shown for active Members as attribution only, without amplification (no per-person views, counts, sorting, grouping, filtering, badges, streaks, or export-like summaries).
@@ -59,7 +59,11 @@ The current research prototype includes only:
 - Hearts, if present, are item-scoped and must not function as a feed mechanic.
 - Hearts must not appear as counts or reactions in Activity.
 
-## Explicit Exclusions (Non-Negotiable For The Current Research Prototype)
+## Phenomenon Anchor
+
+This scope boundary constrains **visibility-to-enforcement drift** by excluding common coordination mechanisms that can be interpreted as obligation, surveillance, or performance management under breakdown and repair.
+
+## Explicit Exclusions (Non-negotiable for the Current Research Prototype)
 
 The current research prototype will not include:
 
@@ -119,4 +123,4 @@ These costs outweigh short-term completeness gains for the current research prot
 
 This decision may only be changed by a new entry:
 
-- D00X - Current Research Prototype Boundary Revision
+- D00X - Current Research Prototype Boundary Revision (Supersedes D003)
