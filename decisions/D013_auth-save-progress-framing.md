@@ -22,7 +22,7 @@ User-facing auth language is framed as “Save Progress” rather than “Create
 
 ## Rationale
 
-KinCart is a research artefact. Pressure to sign up increases friction and can introduce surveillance and conversion dynamics that undermine emotional safety. “Save Progress” communicates the honest utility: optional persistence.
+KinCart is a research artefact. Sign-up pressure can be read as conversion intent and can invite surveillance and “gated access” interpretations that conflict with emotional safety. “Save Progress” communicates the utility: optional persistence. This constraint also constrains **visibility-to-enforcement drift** by preventing onboarding from becoming a pressure surface.
 
 ## Invariants Protected
 
@@ -39,3 +39,9 @@ KinCart is a research artefact. Pressure to sign up increases friction and can i
 
 - Entry offers: Continue As Guest (primary path) and Save Progress (secondary path).
 - Save Progress uses neutral sign-in options without marketing framing or urgency cues.
+
+## Review and Supersession
+
+This decision can only be changed via a new decision entry:
+
+- D00X - Auth Framing Update (Supersedes D013)
