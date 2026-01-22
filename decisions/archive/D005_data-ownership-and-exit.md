@@ -4,6 +4,8 @@
 
 Accepted (Locked)
 
+Note: Ensure this status matches `decision-register.md` and `appendix/governance-links.md` to avoid cross-repo inconsistency.
+
 ## Date Recorded
 
 2026-01-08
@@ -21,6 +23,8 @@ This decision sets the minimum safety properties for:
 - Data scope and ownership (what belongs to a Household boundary)
 - Identity exposure (especially after leaving or removal)
 - Exit semantics (leave and remove behavior, and access boundaries)
+
+This decision constrains **visibility-to-enforcement drift** by treating exit and identity rendering as safety properties rather than accountability features.
 
 ## Decision
 
@@ -40,20 +44,20 @@ This decision sets the minimum safety properties for:
 - After membership ends, Activity references the actor as “Former Member” (system-owned label).
 - No persistent display-name history is presented as a story or attribution trail by default.
 
-### 4) Coordination Artefacts Are Household-Scoped, Not Person-Scoped
+### 4) Coordination Artefacts are Household-Scoped, not Person-Scoped
 
 - Shared Cart Items and Activity belong to the Household boundary.
 - Personal profile identity must not become a global reputation layer or a scorekeeping substrate.
 
-### 5) Deletion is Not a Front-Door Affordance in the Current Research Prototype
+### 5) Deletion is not a Front-Door Affordance in the Current Research Prototype
 
 - Use safe hiding and reversibility patterns for Items (see D011 and the Invariants).
 - Any deletion or erasure requests are treated as an off-surface privacy process, not a user-facing flow in public research materials.
 
 ## Rationale
 
-- Prevents coercion and surveillance dynamics.
-- Enables exit safety so participation does not increase interpersonal risk.
+- Constrains coercion and surveillance interpretations.
+- Supports exit safety so participation does not increase interpersonal risk.
 - Keeps the probe aligned with the invariant: Emotional Safety Over Optimisation.
 
 ## Implications
