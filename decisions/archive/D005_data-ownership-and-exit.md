@@ -4,8 +4,6 @@
 
 Accepted (Locked)
 
-Note: Ensure this status matches `decision-register.md` and `appendix/governance-links.md` to avoid cross-repo inconsistency.
-
 ## Date Recorded
 
 2026-01-08
@@ -36,8 +34,9 @@ This decision constrains **visibility-to-enforcement drift** by treating exit an
 ### 2) Activity is Append-only and Non-narrative
 
 - Activity records shared intent changes as a readable record, not a judgement surface.
-- Membership boundary changes must be system-owned and non-attributed by default.
-- Boundary changes must not be presented in the Activity feed by default if they increase surveillance or blame risk.
+- Household boundary events may appear in Activity as system-owned feed lines without individual attribution by default (for example, Household Name Updated, Household Members Updated, A Former Member No Longer Has Access).
+- Any clarifying detail for Household boundary events is kept in read-only context views.
+- Boundary visibility remains bounded: it must not introduce blame, “who removed whom,” or audit-style interpretation by default.
 
 ### 3) Former Member Identity is De-identified by Default
 
@@ -49,7 +48,7 @@ This decision constrains **visibility-to-enforcement drift** by treating exit an
 - Shared Cart Items and Activity belong to the Household boundary.
 - Personal profile identity must not become a global reputation layer or a scorekeeping substrate.
 
-### 5) Deletion is not a Front-Door Affordance in the Current Research Prototype
+### 5) Deletion is not a Front-door Affordance in the Current Research Prototype
 
 - Use safe hiding and reversibility patterns for Items (see D011 and the Invariants).
 - Any deletion or erasure requests are treated as an off-surface privacy process, not a user-facing flow in public research materials.
@@ -66,7 +65,7 @@ This decision constrains **visibility-to-enforcement drift** by treating exit an
 - Systems that require audit trails for enforcement are out of scope.
 - UI copy must reflect boundaries without blame (for example, “Access Ended Immediately”).
 
-## Non-Goals
+## Non-goals
 
 - Dispute resolution, moderation, or enforcement tooling.
 - Permanent attribution histories.
@@ -76,3 +75,9 @@ This decision constrains **visibility-to-enforcement drift** by treating exit an
 - A removed or departed Member cannot access any Household data.
 - Activity entries referencing a Former Member show “Former Member”, not their prior name, by default.
 - No UI exposes “who removed whom” by default.
+
+## Review and Supersession
+
+This decision can only be changed via a new decision entry:
+
+- D00X - Data Ownership And Exit Safety Update (Supersedes D005)
