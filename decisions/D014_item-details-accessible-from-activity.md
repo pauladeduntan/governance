@@ -14,7 +14,7 @@ KinCart Founder (Sole Architect)
 
 ## Related
 
-D007 (Activity Context Sheet for Handoff), D009 (Activity Detail Sheets are Optional, Neutral Context)
+D007 (Activity Context Sheet for Handoff), D009 (Activity Detail Sheets Are Optional, Neutral Context)
 
 ## Decision
 
@@ -33,7 +33,7 @@ This is the sanctioned way to:
 
 ## Rationale
 
-Activity should remain scannable. Longer Item detail must be readable without forcing the main interface into clutter or increasing surveillance and blame risk.
+Activity stays scannable, while Item detail stays available on demand. This decision constrains **visibility-to-enforcement drift** by relocating high-risk context away from the feed and into a bounded, read-only sheet that supports interpretation and repair without amplifying blame or surveillance cues.
 
 ## Invariants Protected
 
@@ -51,3 +51,9 @@ Activity should remain scannable. Longer Item detail must be readable without fo
 - Avoid moral or managerial language.
 - Prefer situational summaries over exact timestamps to resist precision policing (aligned with D010).
 - Item Details must not add actor attribution beyond what the system already shows.
+
+## Review and Supersession
+
+This decision can only be changed via a new decision entry:
+
+- D00X - Item Details from Activity Update (Supersedes D014)
