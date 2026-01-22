@@ -18,23 +18,23 @@ KinCart does not use “Remove” or “Delete” language for Items in the Shar
 
 - Action label: “Hide Item”
 - Hide Item is non-destructive and reversible.
-- The interface must communicate reversibility with non-blocking microcopy (for example, “You can show it again anytime.”).
+- The interface communicates reversibility with non-blocking microcopy (for example, “You can show it again anytime.”).
 
-This decision is distinct from “Complete Item”. Both actions hide an Item from the active list, but they must not be framed as deletion or punishment.
+This decision is distinct from “Complete Item”. Both actions hide an Item from the active list, but they must not be framed as deletion, punishment, or a moral outcome.
 
 ## Rationale
 
-Destructive language increases fear and conflict (“who deleted it?”). Hide Item reduces escalation risk and keeps the system psychologically safer during breakdown moments.
+Destructive language amplifies fear and conflict (“who deleted it?”). This constraint constrains **visibility-to-enforcement drift** by avoiding permanence cues that can be read as blame or policing during breakdown and repair.
 
 ## Invariants Protected
 
 - Emotional Safety Over Optimisation
 - Reversibility By Default
 
-## Trade-Offs
+## Trade-offs
 
 - Slightly less literal than “delete”
-- Requires clear microcopy so Members understand it is reversible
+- Requires clear microcopy so Members interpret it as reversible
 
 ## Alternatives Considered (Rejected)
 
@@ -49,3 +49,9 @@ Destructive language increases fear and conflict (“who deleted it?”). Hide I
 - Hide Item is reversible via a single clear affordance, preferably “Show Again”, depending on the surface.
 - Avoid multiple competing reversal affordances in the same moment. Prefer one clear route back.
 - Hide Item must not introduce attribution pressure or “who did this” cues.
+
+## Review and Supersession
+
+This decision can only be changed via a new decision entry:
+
+- D00X - Hide Item Semantics Update (Supersedes D011)
